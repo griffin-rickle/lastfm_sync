@@ -33,7 +33,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
         print()
 
 LAST_FM_API='http://ws.audioscrobbler.com/2.0/'
-with open('secrets.txt') as f:
+with open('secrets.json') as f:
     secrets = json.load(f)
     LAST_FM_API_KEY = secrets['LAST_FM_API_KEY']
     LAST_FM_SECRET_KEY = secrets['LAST_FM_SECRET_KEY']
